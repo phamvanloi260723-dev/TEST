@@ -37,17 +37,6 @@ const generateMetaTags = (metadata: typeof SITE_METADATA) => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="JUNOWED" />
-
-    {/* Zalo Meta Tags */}
-    <meta property="zalo:site_name" content="HiNT" />
-    <meta property="zalo:description" content={metadata.description} />
-    <meta property="zalo:image" content={metadata.thumbnail} />
-
-    {/* Google Search Console Verification */}
-    <meta
-      name="google-site-verification"
-      content={metadata.googleVerification}
-    />
   </>
 );
 
