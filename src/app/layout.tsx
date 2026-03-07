@@ -5,7 +5,7 @@ const SITE_METADATA = {
   description:
     "Hoàng Vũ & Hương Giang - JUNOWED. Trải qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu.",
   url: "https://huonggiang-hoangvu.junowed.com/",
-  thumbnail: "https://huonggiang-hoangvu.junowed.com/thumbnail_logo.jpg",
+  thumbnail: "https://huonggiang-hoangvu.junowed.com/thumbnail_logo_v2.jpg", 
   googleVerification: "",
 };
 
