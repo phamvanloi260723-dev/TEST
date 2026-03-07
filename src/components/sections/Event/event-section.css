@@ -1,0 +1,145 @@
+.event-minimal-container {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.event-minimal-card {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+html[data-bs-theme="dark"] .event-minimal-card {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.event-minimal-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.minimal-title {
+  font-size: clamp(1.1rem, 8vw, 2rem);
+  letter-spacing: 1px;
+}
+
+.minimal-venue {
+  font-size: clamp(2rem, 5vw, 3rem);
+  opacity: 0.9;
+}
+
+.minimal-address {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.minimal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minimal-divider span {
+  height: 1px;
+  flex: 0 1 40px;
+  background: currentColor;
+  opacity: 0.1;
+}
+
+/* DateTime Box */
+.minimal-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-num {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #e8406c;
+}
+
+.time-unit {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  margin-top: 4px;
+}
+
+.minimal-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.weekday {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.date-full {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+/* Button Minimal */
+.btn-minimal {
+  background: transparent;
+  border: 1px solid rgba(232, 64, 108, 0.3);
+  color: inherit !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-minimal:hover {
+  background: #e8406c;
+  border-color: #e8406c;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(232, 64, 108, 0.2);
+}
+
+.text-accent {
+  color: #e8406c;
+}
+
+/* Shine effect - subtle and premium */
+.event-minimal-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: 0.8s;
+}
+
+.event-minimal-card:hover::after {
+  left: 200%;
+}
+
+@media (max-width: 576px) {
+  .minimal-datetime .col-auto {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .minimal-datetime .col-auto.border-start {
+    border: none !important;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.05) !important;
+  }
+  html[data-bs-theme="dark"] .minimal-datetime .col-auto.border-top {
+      border-color: rgba(255,255,255,0.05) !important;
+  }
+}

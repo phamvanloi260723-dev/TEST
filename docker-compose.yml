@@ -1,0 +1,15 @@
+services:
+  wedding-2-giang-vu:
+    container_name: wedding-2-giang-vu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3012:80"
+    restart: unless-stopped
+    networks:
+      - wedding
+
+networks:
+  wedding:
+    driver: bridge
