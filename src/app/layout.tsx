@@ -1,19 +1,18 @@
 import "../styles/globals.css";
 
-// Extract metadata configuration for better maintainability
 const SITE_METADATA = {
   title: "Hoàng Vũ & Hương Giang - JUNOWED",
   description:
-    "Hoàng Vũ & Hương Giang - JUNOWED. Trái qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu.",
+    "Hoàng Vũ & Hương Giang - JUNOWED. Trải qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu.",
   url: "https://huonggiang-hoangvu.junowed.com/",
   thumbnail: "https://huonggiang-hoangvu.junowed.com/thumbnail_logo.jpg",
   googleVerification: "",
 };
 
-// Use a separate function to generate metadata for better readability
 const generateMetaTags = (metadata: typeof SITE_METADATA) => (
   <>
     <title>{metadata.title}</title>
+
     <meta name="description" content={metadata.description} />
     <meta
       name="viewport"
@@ -28,15 +27,30 @@ const generateMetaTags = (metadata: typeof SITE_METADATA) => (
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    {/* Open Graph / Social Media Meta Tags */}
+
+    {/* Open Graph */}
     <meta property="og:type" content="website" />
     <meta property="og:url" content={metadata.url} />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
     <meta property="og:image" content={metadata.thumbnail} />
+    <meta property="og:image:secure_url" content={metadata.thumbnail} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="vi_VN" />
     <meta property="og:site_name" content="JUNOWED" />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={metadata.title} />
+    <meta name="twitter:description" content={metadata.description} />
+    <meta name="twitter:image" content={metadata.thumbnail} />
+
+    {/* Zalo */}
+    <meta property="zalo:site_name" content="JUNOWED" />
+    <meta property="zalo:title" content={metadata.title} />
+    <meta property="zalo:description" content={metadata.description} />
+    <meta property="zalo:image" content={metadata.thumbnail} />
   </>
 );
 
