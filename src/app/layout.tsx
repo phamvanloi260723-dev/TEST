@@ -5,7 +5,7 @@ const SITE_METADATA = {
   description:
     "Hoàng Vũ & Hương Giang - JUNOWED. Trải qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu.",
   url: "https://huonggiang-hoangvu.junowed.com/",
-  thumbnail: "https://huonggiang-hoangvu.junowed.com/thumbnail.jpg",
+  thumbnail: "https://test-seven-lac-78.vercel.app/thumbnail.jpg",
   googleVerification: "",
 };
 
@@ -74,7 +74,7 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="192x192"
-          href="https://huonggiang-hoangvu.junowed.com/thumbnail.jpg"
+          href="https://test-seven-lac-78.vercel.app/thumbnail.jpg"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@500;600;700&display=swap"
