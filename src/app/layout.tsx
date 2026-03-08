@@ -35,8 +35,9 @@ const generateMetaTags = (metadata: typeof SITE_METADATA) => (
     <meta property="og:description" content={metadata.description} />
     <meta property="og:image" content={metadata.thumbnail} />
     <meta property="og:image:secure_url" content={metadata.thumbnail} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://test-seven-lac-78.vercel.app/thumbnail.jpg" />
+    <meta property="og:image:width" content="2496" />
+    <meta property="og:image:height" content="3744" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:site_name" content="JUNOWED" />
 
